@@ -31,7 +31,7 @@ export const languages = [
     },
     {
         name: "Dr.Strange",
-        backgroundColor: "#F89B29", 
+        backgroundColor: "#FF6A00", 
         color: "#F9F4DA",
     },
     {
