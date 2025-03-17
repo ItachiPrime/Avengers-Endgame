@@ -1,0 +1,23 @@
+export const words = [
+  "Magic",         
+  "Smash",     
+  "Hammer",    
+  "Gauntlet",  
+  "Armor",
+  "Shield",
+  "Arrow",
+  "Suit",
+  "Jarvis",
+  "Vision",
+  "Groot",
+  "Mjolnir",
+  "Stormbreaker",
+  "Infinity",
+  "Reality",
+  "Space",
+  "Power",
+  "Time",
+  "Soul",
+  "Mind",
+  "Bucky"
+];

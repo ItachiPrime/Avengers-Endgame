@@ -1,49 +1,54 @@
 export const languages = [
     {
-        name: "HTML",
-        backgroundColor: "#E2680F",
+        name: "Rocket",
+        backgroundColor: "#607D8B", 
         color: "#F9F4DA",
     },
     {
-        name: "CSS",
-        backgroundColor: "#328AF1",
+        name: "Groot",
+        backgroundColor: "#8D6E63", 
         color: "#F9F4DA",
     },
     {
-        name: "JavaScript",
-        backgroundColor: "#F4EB13",
+        name: "Captain",
+        backgroundColor: "#1976D2", 
+        color: "#F9F4DA",
+    },
+    {
+        name: "Hulk",
+        backgroundColor: "#4CAF50", 
         color: "#1E1E1E",
     },
     {
-        name: "React",
-        backgroundColor: "#2ED3E9",
+        name: "Vision",
+        backgroundColor: "#FFC107", 
         color: "#1E1E1E",
     },
     {
-        name: "TypeScript",
-        backgroundColor: "#298EC6",
+        name: "Wanda",
+        backgroundColor: "#D81B60", 
         color: "#F9F4DA",
     },
     {
-        name: "Node.js",
-        backgroundColor: "#599137",
+        name: "Dr.Strange",
+        backgroundColor: "#F89B29", 
         color: "#F9F4DA",
     },
     {
-        name: "Python",
-        backgroundColor: "#FFD742",
-        color: "#1E1E1E",
-    },
-    {
-        name: "Ruby",
-        backgroundColor: "#D02B2B",
+        name: "Spiderman",
+        backgroundColor: "#D32F2F", 
         color: "#F9F4DA",
     },
     {
-        name: "Assembly",
-        backgroundColor: "#2D519F",
+        name: "Thor",
+        backgroundColor: "#6A5ACD", 
         color: "#F9F4DA",
     },
-]
+    {
+        name: "IronMan",
+        backgroundColor: "#D32F2F", 
+        color: "#F9F4DA",
+    }
+];
 
-export default languages
+export default languages;
