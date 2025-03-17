@@ -1,19 +1,31 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Avengers: Endgame - Word Guessing Game  
+### 🎮 **Play Now: [Avengers Endgame Fight](https://avengers-endgame-fight.netlify.app/)**  
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Save the Avengers from being snapped away! Can you guess the word before all the weak heroes disappear? Test your skills in this thrilling **Endgame-inspired word guessing game!**  
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+---
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## 🚀 Features  
+✅ **Avengers Theme** – Inspired by the **Endgame battle** 🔥  
+✅ **Epic Gameplay** – Guess the right word to **save the heroes**  
+✅ **Snapping Effect** – Each wrong guess makes an **Avenger vanish** 😨  
+✅ **Colorful UI** – Every Avenger has their own **powerful color** 🎨  
+✅ **Iron Man is the last hope!** – He’s the final hero to survive 🦾  
 
-Happy Coding!
+---
+
+## 🎮 How to Play?  
+1️⃣ A secret **Avengers-related word** is chosen.  
+2️⃣ You have **10 attempts** to guess it correctly.  
+3️⃣ Each wrong guess **snaps away** a weak Avenger.  
+4️⃣ Guess the word before Iron Man is gone! ⚡  
+
+---
+
+## 🛠️ Tech Stack  
+- **React.js** – Frontend framework  
+- **CSS/Tailwind** – Styling the UI  
+- **JavaScript** – Game logic  
+
+---
+
