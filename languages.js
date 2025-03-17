@@ -10,7 +10,7 @@ export const languages = [
         color: "#F9F4DA",
     },
     {
-        name: "Captain",
+        name: "Cap.America",
         backgroundColor: "#1976D2", 
         color: "#F9F4DA",
     },
