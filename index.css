@@ -21,7 +21,7 @@
   }
   
   main {
-    padding: 20px;
+    padding: 30px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -246,12 +246,6 @@
       touch-action: manipulation;
     }
   
-    /* Fix for iOS Safari 100vh issue */
-    @supports (-webkit-touch-callout: none) {
-      body {
-        height: -webkit-fill-available;
-      }
-    }
   }
   
   /* Small mobile screens */
@@ -268,7 +262,7 @@
     }
   
     main {
-      padding: 15px;
+      padding: 20px;
     }
   
     .words {
@@ -282,7 +276,7 @@
   
     .keyboard-key {
       width: calc(10% - 3px);
-      min-width: 28px;
+      min-width: 45px;
       font-size: 0.9rem;
     }
   
