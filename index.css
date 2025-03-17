@@ -15,8 +15,9 @@ body {
 
 #root{
     border: #ffffff solid 2px;
-    max-width: 500px;
+    max-width: 550px;
     border-radius: 10px;
+    height:640px;
 }
 
 main{

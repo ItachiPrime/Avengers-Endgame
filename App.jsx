@@ -3,12 +3,12 @@ import languages from "./languages"
 import { getFarewellText } from "./utils"
 import { useWindowSize } from 'react-use'
 import Confetti from 'react-confetti'
-import { words } from "./words"
+import { getrandomword } from "./utils"
 
 export default function AssemblyEndgame() {
 
     const { width, height } = useWindowSize()
-    const [word, setWord] = React.useState(getrandomword())
+    const [word, setWord] = React.useState(() => getrandomword())
     const alphabets="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const [gletters,setGletters] = React.useState([])
     const wg = gletters.filter(letter => !word.toUpperCase().includes(letter)).length
@@ -18,7 +18,7 @@ export default function AssemblyEndgame() {
 
     const letters = word.toUpperCase().split("")
     const letter = letters.map((letter,index) => (
-        <span key={index} className="letter">{gletters.includes(letter) ? letter : " "} </span>
+        <span key={index} className="letter">{gletters.includes(letter) ? letter : isGameLost ? letter :" "} </span>
         )
     )
 
@@ -41,10 +41,6 @@ export default function AssemblyEndgame() {
     function Newgame(){
         setGletters([])
         setWord(getrandomword())
-    }
-
-    function getrandomword(){
-        return words[Math.floor(Math.random() * words.length)];
     }
 
     const languageElements = languages.map(language => (
