@@ -13,6 +13,16 @@ body {
     justify-content: center;
 }
 
+#root{
+    border: #ffffff solid 2px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+main{
+    padding:20px;
+}
+
 header {
     text-align: center;
 }
@@ -127,8 +137,9 @@ section.game-won > h2 {
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
-    margin-block:30px;
-    max-width: 450px;
+    align-items: center;
+    max-width: 480px;
+    margin:30px auto;
 }
 
 .keyboard-key{
