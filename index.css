@@ -19,6 +19,10 @@
     border-radius: 10px;
     height: 640px;
   }
+
+  .logo{
+    width:30px;
+  }
   
   main {
     padding: 30px;
@@ -31,14 +35,14 @@
   header {
     text-align: center;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom:8px;
   }
   
   header > h1 {
     font-size: 1.25rem;
     font-weight: 500;
     color: #f9f4da;
-    margin-top: 0.5rem;
+    margin:2px;
   }
   
   header > p {
@@ -81,34 +85,33 @@
     color: #f9f4da;
     border-radius: 4px;
     margin-block: 10px;
-    padding: 33px;
+    padding: 24px;
     width: 100%;
   }
   
   section.null {
-    height: 107px;
-    min-height: 80px;
+    height: 89px;
   }
   
   section.game-lost > p {
     margin: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     text-align: center;
   }
   section.game-lost > h2 {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 2px;
     text-align: center;
   }
   
   section.game-won > p {
     margin: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     text-align: center;
   }
   section.game-won > h2 {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 2px;
     text-align: center;
   }
   
@@ -116,7 +119,7 @@
     display: flex;
     margin: 20px auto;
     flex-wrap: wrap;
-    gap: 3px;
+    gap:3px;
     max-width: 400px;
     align-items: center;
     justify-content: center;
@@ -127,7 +130,6 @@
   .language-chip {
     border-radius: 3px;
     padding: 2px 6px;
-    margin: 2px;
   }
   
   .lost {
@@ -252,6 +254,11 @@
   @media screen and (max-width: 480px) {
     body {
       padding: 0;
+    }
+
+    .logo{
+      width:60px;
+      padding-block: 6px;
     }
   
     #root {

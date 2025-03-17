@@ -60,6 +60,7 @@ export default function AssemblyEndgame() {
     return (
         <main>
             <header>
+            <img src="favicon.png" className="logo"/>
                 <h1>Avengers: Endgame</h1>
                 <p>Guess the word within 10 attempts to keep the
                  world safe from Thanos!</p>
