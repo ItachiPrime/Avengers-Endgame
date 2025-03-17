@@ -1,124 +1,122 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: "Hanken Grotesk", Arial, sans-serif;
     background-color: #262626;
-    color: #d9d9d9;
-    padding: 10px;
-    min-height: 100vh;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  #root {
+}
+
+#root{
     border: #ffffff solid 2px;
-    width: 100%;
     max-width: 550px;
     border-radius: 10px;
-    height: auto;
-    min-height: 640px;
-    max-height: 90vh;
-    overflow-y: auto;
-    margin: 0 auto;
-  }
-  
-  main {
-    padding: 15px;
-  }
-  
-  header {
+    height:640px;
+}
+
+main{
+    padding:20px;
+}
+
+header {
     text-align: center;
-  }
-  
-  header > h1 {
-    font-size: clamp(1.1rem, 4vw, 1.25rem);
+}
+
+header > h1 {
+    font-size: 1.25rem;
     font-weight: 500;
-    color: #f9f4da;
-    margin-top: 0.5rem;
-  }
-  
-  header > p {
-    font-size: clamp(0.8rem, 3vw, 0.875rem);
+    color: #F9F4DA;
+}
+
+header > p {
+    font-size: 0.875rem;
     max-width: 350px;
-    color: #8e8e8e;
+    color: #8E8E8E;
     margin: 0 auto;
-    padding: 0 10px;
-  }
-  
-  section.game-won,
-  section.game-lost,
-  section.farewell {
+}
+
+section.game-won {
+    background-color: #10A95B;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #f9f4da;
+    color: #F9F4DA;
     border-radius: 4px;
-    margin-block: 20px;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  section.game-won {
-    background-color: #10a95b;
-  }
-  
-  section.game-lost {
+    margin-block: 30px;
+}
+
+section.game-lost {
     background-color: #ff0000;
-  }
-  
-  section.farewell {
-    background-color: #7a5ea7;
-    padding: 15px;
-  }
-  
-  section.null {
-    height: auto;
-    min-height: 80px;
-  }
-  
-  section.game-lost > p,
-  section.game-won > p {
-    margin: 0;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  section.game-lost > h2,
-  section.game-won > h2 {
-    font-size: clamp(1.1rem, 4vw, 1.25rem);
-    margin: 5px;
-    text-align: center;
-  }
-  
-  .language-chips {
     display: flex;
-    margin: 15px auto;
+    flex-direction: column;
+    align-items: center;
+    color: #F9F4DA;
+    border-radius: 4px;
+    margin-block: 30px;
+}
+
+section.farewell{
+    background-color: #7A5EA7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F9F4DA;
+    border-radius: 4px;
+    margin-block: 30px;
+    padding:23px;
+}
+
+section.null{
+    height:107px;
+}
+
+section.game-lost > p {
+    margin:0px;
+    padding-bottom:10px
+}
+section.game-lost > h2 {
+    font-size: 1.25rem;
+    margin: 5px
+}
+
+section.game-won > p {
+    margin: 0px;
+    padding-bottom:10px
+}
+section.game-won > h2 {
+    font-size: 1.25rem;
+    margin: 5px
+}
+
+.language-chips {
+    display: flex;
+    margin: 20px auto;
     flex-wrap: wrap;
-    gap: 5px;
-    max-width: 100%;
+    gap:3px;
+    max-width: 400px;
     align-items: center;
     justify-content: center;
-    padding: 0 5px;
-  }
-  
-  .language-chip {
+}
+
+.language-chip{
     border-radius: 3px;
-    padding: 2px 6px;
-    margin: 2px;
-  }
-  
-  .lost {
+    padding:2px 6px;
+}
+
+.lost{
     border-radius: 3px;
-    padding: 2px 6px;
-    position: relative;
-  }
-  
-  .lost::before {
-    content: "\1F480";
+    padding:2px 6px;
+    position:relative;
+}
+
+.lost::before {
+    content:"\1F480";
     position: absolute;
     display: flex;
     align-items: center;
@@ -130,140 +128,76 @@
     left: 0;
     background-color: rgba(255, 0, 0, 0.7);
     border-radius: 3px;
-  }
-  
-  .words {
+}
+
+.words{
     padding-block: 10px;
     display: flex;
-    gap: 2px;
+    gap:2px;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .letter,
-  .missed-letter {
-    height: 40px;
-    padding: 5px;
+}
+
+.letter{
+    height:40px;
+    padding:5px;
     background-color: rgb(53, 53, 53);
     border-radius: 1px;
-    width: 36px;
+    width:36px;
     text-align: center;
     font-size: 1.4rem;
     border-bottom: 1px solid #adadad;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .letter {
     color: white;
-  }
-  
-  .missed-letter {
+}
+
+.missed-letter{
+    height:40px;
+    padding:5px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 1px;
+    width:36px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #adadad;
     color: rgb(255, 0, 0);
-  }
-  
-  .keyboard {
+}
+
+.keyboard{
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  
-  .keyboard-key {
+    max-width: 480px;
+    margin:30px auto;
+}
+
+.keyboard-key{
     font-family: "Hanken Grotesk";
-    padding: 7px 0;
+    padding: 7px;
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
-    width: calc(9% - 4px);
-    min-width: 32px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    touch-action: manipulation;
-  }
-  
-  .keyboard-key:disabled {
+    width:40px;
+}
+
+.keyboard-key:disabled {
     cursor: not-allowed;
-    opacity: 0.6;
-  }
-  
-  button.new-game {
+    opacity: 0.6
+}
+
+button.new-game {
     background-color: #0ab81f;
     border: 4px solid #007620;
     border-radius: 6px;
     font-family: Hanken Grotesk;
-    width: 100%;
-    max-width: 225px;
+    width: 225px;
     height: 40px;
     padding: 6px 12px;
     display: block;
     margin-inline: auto;
     cursor: pointer;
-    color: white;
+    color:white;
     font-weight: 600;
     font-size: 1rem;
-    touch-action: manipulation;
-  }
-  
-  /* Media Queries for different screen sizes */
-  @media (max-width: 400px) {
-    main {
-      padding: 10px;
-    }
-  
-    .keyboard-key {
-      width: calc(10% - 4px);
-      min-width: 28px;
-      height: 38px;
-      font-size: 0.9rem;
-    }
-  
-    .letter,
-    .missed-letter {
-      height: 35px;
-      width: 30px;
-      font-size: 1.2rem;
-    }
-  
-    button.new-game {
-      max-width: 200px;
-      height: 38px;
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 320px) {
-    .keyboard-key {
-      width: calc(10% - 4px);
-      min-width: 25px;
-      height: 35px;
-      font-size: 0.85rem;
-      padding: 4px 0;
-    }
-  
-    .letter,
-    .missed-letter {
-      height: 32px;
-      width: 28px;
-      font-size: 1.1rem;
-    }
-  }
-  
-  /* Fix for iOS Safari 100vh issue */
-  @supports (-webkit-touch-callout: none) {
-    body {
-      min-height: -webkit-fill-available;
-    }
-    #root {
-      max-height: -webkit-fill-available;
-    }
-  }
-  
-  
+}
