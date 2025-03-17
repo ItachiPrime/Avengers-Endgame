@@ -1,8 +1,12 @@
 import React from "react"
 import languages from "./languages"
+import { getFarewellText } from "./utils"
+import { useWindowSize } from 'react-use'
+import Confetti from 'react-confetti'
 
 export default function AssemblyEndgame() {
 
+    const { width, height } = useWindowSize()
     const [word, setWord] = React.useState("react")
     const alphabets="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const [gletters,setGletters] = React.useState([])
@@ -59,7 +63,10 @@ export default function AssemblyEndgame() {
             {isGameOver ? <section className={isGameWon ? "game-won":"game-lost"}>
                 <h2>{isGameWon ? "You won!" : "You Lost!"}</h2>
                 <p>{isGameWon ? "Well Done!" : "Better luck next time!"}</p>
-            </section> : <section className="null"></section>} 
+                <Confetti width={width} height={height}/>
+            </section> : <section className={wg>0 ?"farewell": "null"}>
+                {wg>0 && getFarewellText(languages[wg-1].name)}
+                </section>} 
             <section>
                 <div className="language-chips">
                     {languageElements}
