@@ -60,6 +60,10 @@ section.game-lost {
     margin-block: 30px;
 }
 
+section.null{
+    height:107px;
+}
+
 section.game-lost > p {
     margin:0px;
     padding-bottom:10px

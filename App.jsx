@@ -3,7 +3,7 @@ import languages from "./languages"
 
 export default function AssemblyEndgame() {
 
-    const [word, setWord] = React.useState("javas")
+    const [word, setWord] = React.useState("react")
     const alphabets="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const [gletters,setGletters] = React.useState([])
     const wg = gletters.filter(letter => !word.toUpperCase().includes(letter)).length
@@ -56,14 +56,10 @@ export default function AssemblyEndgame() {
                 <p>Guess the word within 8 attempts to keep the
                 programming world safe from Assembly!</p>
             </header>
-            {isGameWon && <section className="game-won">
-                <h2>You win!</h2>
-                <p>Well done! 🎉</p>
-            </section> }
-            {isGameLost && <section className="game-lost">
-                <h2>You lost!</h2>
-                <p>Well done! 🎉</p>
-            </section>}
+            {isGameOver ? <section className={isGameWon ? "game-won":"game-lost"}>
+                <h2>{isGameWon ? "You won!" : "You Lost!"}</h2>
+                <p>{isGameWon ? "Well Done!" : "Better luck next time!"}</p>
+            </section> : <section className="null"></section>} 
             <section>
                 <div className="language-chips">
                     {languageElements}
