@@ -18,7 +18,7 @@ export default function AssemblyEndgame() {
 
     const letters = word.toUpperCase().split("")
     const letter = letters.map((letter,index) => (
-        <span key={index} className="letter">{gletters.includes(letter) ? letter : isGameLost ? letter :" "} </span>
+        <span key={index} className={(isGameLost && !gletters.includes(letter)) ? "missed-letter":"letter"}>{gletters.includes(letter) ? letter : isGameLost ? letter :" "} </span>
         )
     )
 
@@ -67,7 +67,12 @@ export default function AssemblyEndgame() {
             {isGameOver ? <section className={isGameWon ? "game-won":"game-lost"}>
                 <h2>{isGameWon ? "You won!" : "You Lost!"}</h2>
                 <p>{isGameWon ? "You did it… just like Iron Man!" : "The Avengers have been snapped... 💀"}</p>
-                {isGameWon && <Confetti width={width} height={height}/>}
+                {isGameWon && <Confetti 
+                width={width} 
+                height={height} 
+                recycle={false}
+                numberOfPieces={1000}
+                />}
             </section> : <section className={wg>0 ?"farewell": "null"}>
                 {wg>0 && getFarewellText(languages[wg-1].name)}
                 </section>} 

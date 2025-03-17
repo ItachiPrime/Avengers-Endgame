@@ -149,6 +149,18 @@ section.game-won > h2 {
     color: white;
 }
 
+.missed-letter{
+    height:40px;
+    padding:5px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 1px;
+    width:36px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #adadad;
+    color: rgb(255, 0, 0);
+}
+
 .keyboard{
     display: flex;
     flex-wrap: wrap;
@@ -175,9 +187,9 @@ section.game-won > h2 {
 }
 
 button.new-game {
-    background-color: #00b615;
-    border: 1px solid #D7D7D7;
-    border-radius: 4px;
+    background-color: #0ab81f;
+    border: 4px solid #007620;
+    border-radius: 6px;
     font-family: Hanken Grotesk;
     width: 225px;
     height: 40px;
